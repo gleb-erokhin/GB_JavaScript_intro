@@ -68,3 +68,29 @@ console.log( mySum + dif + mult + div);
 // Не запуская код, определите, что отобразится в консоли:
 // `let f = 2 * (8 / 4);` 4
 
+// Задание 5: 
+// 1. Запишите в переменную `a` число `0.1`, а в переменную `b` - число `0.2`. Найдите сумму значений этих переменных и выведите ее на экран.
+let numA = 0.1;
+let numB = 0.2;
+console.log(numA + numB);
+
+// округление
+let drob = 123.567;
+console.log(drob);
+console.log(Math.round(drob));
+console.log(Math.floor(drob));
+console.log(Math.ceil(drob));
+console.log(Math.trunc(drob));
+
+console.log(drob * 100);
+
+console.log(Math.floor(drob * 100));
+console.log(Math.floor(drob * 100) / 100);
+
+console.log(drob.toFixed(2)); 
+// toFixed - возвращает строку
+
+// 2. Создайте переменную `c`, запишите в нее какое-нибудь положительное или отрицательное число. Выведите на экран это число с обратным знаком.
+const minus = -99;
+console.log(-minus);
+console.log(Math.abs(minus));
