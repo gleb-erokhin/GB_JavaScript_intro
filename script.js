@@ -112,3 +112,6 @@ console.log(progNmae + progNameLast);
 const text = "hello"; 
 const word = "world";
 console.log(text + " " + word);
+
+// бек тик
+console.log(`${text} ${word}`); // встраиваем внутри строку любы данных
