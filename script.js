@@ -94,3 +94,21 @@ console.log(drob.toFixed(2));
 const minus = -99;
 console.log(-minus);
 console.log(Math.abs(minus));
+
+
+// Задание 6: 
+// 1. Создайте строку с вашем именем и строку с вашей фамилией. Выведите эти данные в консоль.
+// 2. Создайте переменную с текстом 'java' и переменную с текстом 'script'. С помощью этих переменных и операции конкатенации строк выведите в консоль строку 'javascript'.
+// 3. Создайте переменную с текстом 'hello' и переменную с текстом 'world'. С помощью этих переменных и операции конкатенации строк выведите в консоль строку 'hello world', желательно использовать бэктики (обратные кавычки).
+
+const firstName = "Gleb";
+const lastName = "Yer";
+console.log(firstName, lastName);
+
+const progNmae = "java";
+const progNameLast = "script";
+console.log(progNmae + progNameLast);
+
+const text = "hello"; 
+const word = "world";
+console.log(text + " " + word);
