@@ -10,7 +10,7 @@
 // 7. Проверьте работоспособность кода.
 
 // Выполнение
-// console.log("Текст из script.js!");
+console.log("Текст из script.js!");
 
 // Задание 2:
 // 1. Создайте переменную `num` и присвойте ей значение `123`. Выведите значение этой переменной в консоль.
@@ -20,20 +20,20 @@
 // Тайминг: 20 минут.
 
 // выполнение
-// let num = 123;
-// console.log(num);
+let num = 123;
+console.log(num);
 
-// let a = 5;
-// a = 7;
-// console.log(a);
+let a = 5;
+a = 7;
+console.log(a);
 
-// let b = 1 + 2 + 3;
-// console.log(b);
+let b = 1 + 2 + 3;
+console.log(b);
 
-// const n = 222;
-// console.log(n);
-// n = 333;
-// console.log(n);
+const n = 222;
+console.log(n);
+n = 333;
+console.log(n);
 
 
 // задание 3
