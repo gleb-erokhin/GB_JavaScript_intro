@@ -13,4 +13,10 @@
 Уточнение: пользователь всегда вводит корректное число.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let userAnswerTempCell = prompt("Введите значение температуры в градусах Цельсия: ");
+let answerFar = (9 / 5) * userAnswerTempCell + 32;
+
+// для отладки
+// console.log(answerFar);
+
+alert(`Цельсий: ${userAnswerTempCell}, Фаренгейт: ${answerFar}`);
