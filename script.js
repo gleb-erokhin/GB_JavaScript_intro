@@ -178,7 +178,7 @@
 // консоль до тех пор, пока не встретится элемент со значением 0. После этого
 // цикл должен завершить свою работу.
 
-let array = [2, 5, 9, 0, 3, 1, 4];
+// let array = [2, 5, 9, 0, 3, 1, 4];
 
 // for (let i = 0; i < array.length; i++) {
 //     if (array[i] === 0) {
@@ -187,3 +187,67 @@ let array = [2, 5, 9, 0, 3, 1, 4];
 //     console.log(array[i]);
 // }
 
+// Задание 5
+// 1. Создать массив из 10 случайных чисел от 0 до 100 включительно.
+// Наобходимо вывести в консоль все числа, которые делятся и на 2, и на 3.
+
+// const arr =[];
+
+// for (let i = 0; i < 10; i++) {
+//     arr.push(Math.floor(Math.random() * 100));
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 6 === 0) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// 2. Дан массив: `[1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3]`. Подсчитайте количество
+// цифр 3 в этом массиве.
+
+// let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let count = 0;
+
+// arr.forEach(element => {
+//     if (element === 3) {
+//         count++;
+//     }
+// });
+// console.log(count);
+
+// 4. Дан массив: `[1, 2, 3, 4, 5]`.
+// С помощью метода splice преобразуйте массив в следующий: [1, 4, 5]
+// splice изменяет текущий массив
+
+//  в константе нет массива, есть только ссылка где он лежит в памяти, ссылка остается не изменной
+// нельзя присвоить arr другой массиы
+
+// const arr = [1, 2, 3, 4, 5];
+
+// // let res = arr.splice(1, 2);
+// let res = arr.splice(1, 2);
+// console.log(arr);
+
+// задание со *
+// const arr = [15, 95, 63, 58, 25];
+
+// filter - вернет новый массив
+
+// const array = arr.filter((element) => {
+//   if (element > 25) {
+//     return true;
+//   }
+//   return false;
+// });
+
+// const array = arr.filter((element) => {
+//   return element > 25;
+// });
+
+// const array = arr.filter((element) => element > 25);
+// console.log(array);
+
+// метод filter
+// (method) Array<number>.filter(predicate: 
+// (value: number, index: number, array: number[]) => unknown, thisArg?: any): number[] (+1 overload)
