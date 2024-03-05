@@ -61,11 +61,16 @@
 // 4. Создайте произвольный массив из 5 элементов, удалите из него два элемента. 
 // Проверьте, какое станет значение свойства length после этого.
 
-// const arr =[];
+const arr =[];
 
-// for (let index = 0; index < 5; index++) {
-//     arr[index] = Math.floor(Math.random() * 100);
-// }
-// console.log(arr);
+for (let index = 0; index < 5; index++) {
+    arr.push(Math.floor(Math.random() * 100));
+}
+console.log(arr);
+console.log(arr.length);
+arr.pop();
+arr.pop();
+console.log(arr);
+console.log(arr.length);
 
 
