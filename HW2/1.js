@@ -13,4 +13,11 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const positive = Number(prompt('Enter positive number: '));
+const negative = Number(prompt('Enter negative number: '));
+
+if (positive > 0 && negative <0) {
+    alert("Все значения верные.");
+} else {
+    alert("Одно или более значений некорректно.");
+}
