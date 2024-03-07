@@ -155,3 +155,33 @@
 // подсказок может быть несколько.
 // Если пользователь ответил неверно после всех подсказок, то в консоль 
 // выводится текст: “вы проиграли”.
+
+const riddle = {
+    question: 'Зимой и летом одним цветом',
+    answer: 'ёлка',
+    help: ['Это зеленая', 'Это колючая'],
+    // создем метод 
+    askQuestion() {
+        const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
+        if (userAnsver.toLowerCase() === this.answer) {
+            console.log('Поздравляем вы ответили верно!');
+            // уходим из цикла
+            return;
+        } 
+        console.log('Вы ответили не верно :(');
+
+        for (let i = 0; i < this.help.length; i++) {
+            console.log(this.help[i]);
+            const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
+            if (userAnsver.toLowerCase() === this.answer) {
+                console.log('Поздравляем вы ответили верно!');
+                // уходим из цикла
+                return;
+            } 
+        }  
+        console.log('Да ладно ? :(');
+    }
+};
+
+riddle.askQuestion();
+
