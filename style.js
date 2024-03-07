@@ -160,24 +160,27 @@ const riddle = {
     question: 'Зимой и летом одним цветом',
     answer: 'ёлка',
     help: ['Это зеленая', 'Это колючая'],
-    // создем метод 
-    askQuestion() {
+    // повторяющийся метод if
+    userWin() {
         const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
         if (userAnsver.toLowerCase() === this.answer) {
             console.log('Поздравляем вы ответили верно!');
             // уходим из цикла
-            return;
+            return true;
         } 
+    },
+    // создем метод 
+    askQuestion() {
+        if (this.userWin()) {
+            return   
+        }
         console.log('Вы ответили не верно :(');
-
+        
         for (let i = 0; i < this.help.length; i++) {
             console.log(this.help[i]);
-            const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
-            if (userAnsver.toLowerCase() === this.answer) {
-                console.log('Поздравляем вы ответили верно!');
-                // уходим из цикла
-                return;
-            } 
+            if (this.userWin()) {
+                return   
+            }
         }  
         console.log('Да ладно ? :(');
     }
