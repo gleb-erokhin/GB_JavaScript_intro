@@ -14,4 +14,14 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const dayNumber = Number(prompt('enter number of [1, 32)'));
+
+if (dayNumber <= 10) {
+    alert(`Число ${dayNumber} попадает в 1 декаду месяца.`);
+} else if (dayNumber <= 20) {
+    alert(`Число ${dayNumber} попадает во 2 декаду месяца.`);
+} else if (dayNumber > 20 && dayNumber < 32) {
+    alert(`Число ${dayNumber} попадает в 3 декаду месяца.`);
+} else {
+    alert("Неверное значение");
+}
