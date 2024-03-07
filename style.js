@@ -156,35 +156,92 @@
 // Если пользователь ответил неверно после всех подсказок, то в консоль 
 // выводится текст: “вы проиграли”.
 
+// const riddle = {
+//     question: 'Зимой и летом одним цветом',
+//     answer: 'ёлка',
+//     help: ['Это зеленая', 'Это колючая'],
+//     // повторяющийся метод if
+//     userWin() {
+//         const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
+//         if (userAnsver.toLowerCase() === this.answer) {
+//             console.log('Поздравляем вы ответили верно!');
+//             // уходим из цикла
+//             return true;
+//         } 
+//     },
+//     // создем метод 
+//     askQuestion() {
+//         if (this.userWin()) {
+//             return   
+//         }
+//         console.log('Вы ответили не верно :(');
+        
+//         for (let i = 0; i < this.help.length; i++) {
+//             console.log(this.help[i]);
+//             if (this.userWin()) {
+//                 return   
+//             }
+//         }  
+//         console.log('Да ладно ? :(');
+//     }
+// };
+
+// riddle.askQuestion();
+
+/*
+
+Задание требует дорешить, не дает 3 попытку, выдает сразу что проиграли на второй попытке
+
+const riddle = {
+        question: 'Зимой и летом одним цветом',
+        answer: 'ёлка',
+        help: ['Это зеленая', 'Это колючая'],
+}
+
+riddle.askQuestion = function() {
+    let userAnswer;
+    let i = 0;
+    do {
+        userAnswer = prompt(`${this.question}`);
+        if (userAnswer.toLowerCase() === this.answer) {
+            console.log('Вы выиграли');
+            return
+        } else {
+            console.log(`Подумайте еще. Вот подсказка: ${this.help[i]}`);
+            i++;
+        }
+    } while (userAnswer.toLowerCase() !== this.answer  && i < this.help.length + 1);
+    console.log('Вы самое слабое звено!');
+}
+riddle.askQuestion();
+*/
+
+// 3 вариант Преподавателя
+
+/*
 const riddle = {
     question: 'Зимой и летом одним цветом',
     answer: 'ёлка',
     help: ['Это зеленая', 'Это колючая'],
-    // повторяющийся метод if
-    userWin() {
-        const userAnsver = prompt(`Введите ответ на загадку: ${this.question}`);
-        if (userAnsver.toLowerCase() === this.answer) {
-            console.log('Поздравляем вы ответили верно!');
-            // уходим из цикла
-            return true;
-        } 
-    },
-    // создем метод 
-    askQuestion() {
-        if (this.userWin()) {
-            return   
-        }
-        console.log('Вы ответили не верно :(');
-        
-        for (let i = 0; i < this.help.length; i++) {
-            console.log(this.help[i]);
-            if (this.userWin()) {
-                return   
-            }
-        }  
-        console.log('Да ладно ? :(');
-    }
-};
+}
 
-riddle.askQuestion();
 
+riddle.askQuestion = function () {
+    let userAnswer;
+    let i = 0;
+    do {
+      userAnswer = prompt(`${this.question}`);
+      if (userAnswer.toLowerCase() === this.answer) {
+        console.log('Вы выиграли');
+        return
+      } if (i < this.help.length) {
+        console.log(`Подумайте еще. Вот подсказка: ${this.help[i]}`);
+        i++;
+      } else {
+        break;
+      }
+    } while (userAnswer.toLowerCase() !== this.answer);
+    console.log('Вы самое слабое звено!');
+  }
+  riddle.askQuestion();
+  */
