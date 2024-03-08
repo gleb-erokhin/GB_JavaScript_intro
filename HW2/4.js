@@ -25,8 +25,8 @@
 
 const number = Number(prompt("enter number: "));
 
-let unit = number % 10;
-let tens = Math.floor(number / 10 % 10);
-let hundred = Math.floor(number / 100 % 10); 
+const unit = number % 10;
+const tens = Math.floor(number / 10 % 10);
+const hundred = Math.floor(number / 100 % 10); 
 
 console.log(`В числе ${number} количество сотен: ${hundred}, десятков: ${tens}, единиц: ${unit}`);

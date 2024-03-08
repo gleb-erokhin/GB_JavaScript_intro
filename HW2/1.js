@@ -16,7 +16,7 @@
 const positive = Number(prompt('Enter positive number: '));
 const negative = Number(prompt('Enter negative number: '));
 
-if (positive > 0 && negative <0) {
+if (positive > 0 && negative < 0) {
     alert("Все значения верные.");
 } else {
     alert("Одно или более значений некорректно.");
