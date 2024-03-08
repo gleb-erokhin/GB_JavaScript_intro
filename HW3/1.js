@@ -7,4 +7,10 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const number = Number(prompt('Enter the number: '))
+
+function upToCibe(number) {
+    return number ** 3;
+}
+
+console.log(upToCibe(number));
