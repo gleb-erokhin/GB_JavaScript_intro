@@ -12,7 +12,7 @@
 const userNumber = prompt('Enter your salay GROS: ');
 
 // Делаем проверку на число, если все нормально, то вычисляем с помощью функции
-if ((userNumber !== "number")) {
+if (isNaN(userNumber)) {
     console.log("Значение задано неверно");
 } else {
     console.log("Размер заработной платы за вычетом налогов равен:", userRate(userNumber));
