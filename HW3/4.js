@@ -18,4 +18,33 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const numOne = Number(prompt('Enter number one'));
+const numtwo = Number(prompt('Enter number two'));
+
+function sum(one, two) {
+    return one + two;
+}
+
+function dev(one, two) {
+    return one / two;
+}
+
+function minus(one, two) {
+    if (one < two) {
+        return two - one; 
+    } else if (one === two) {
+        return 0;
+    } else {
+        return one - two;
+    }
+}
+
+function mul(one, two) {
+    return one * two;
+}
+
+
+alert(sum(numOne, numtwo));
+alert(dev(numOne, numtwo));
+alert(minus(numOne, numtwo));
+alert(mul(numOne, numtwo));
