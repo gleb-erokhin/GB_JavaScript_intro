@@ -25,4 +25,11 @@ function numberCompare(one, two, three) {
     }
 }
 
-console.log(numberCompare(userNumber1, userNumber2, userNumber3));
+// второй вариант через функцию
+function numberCompareTwo(one, two, three) {
+    const result = Math.max(one, two, three);
+    return console.log(`Максимальное значение среди чисел ${one}, ${two}, ${three} равно ${result}`);
+}
+
+// console.log(numberCompare(userNumber1, userNumber2, userNumber3));
+// console.log(numberCompareTwo(userNumber1, userNumber2, userNumber3));
