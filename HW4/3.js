@@ -14,4 +14,29 @@
 не окажется, значит нужно будет вывести пустой массив.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const array = [];
+let result = 0;
+
+for (let i = 0; i < 10; i++) {
+    array.push(Math.floor(Math.random() * 10));
+}
+console.log(`new Array: [${array}]`);
+
+// суммируем элементы массива
+array.forEach(element => {
+    result = result + element;
+});
+console.log(`Array's element summ: ${result}`);
+
+// вычисляем минимальный элемент
+let min = array[0];
+for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+        min = array[i];
+    }
+}
+console.log(`Minimum array's element: ${min}`);
+
+// вариант через остаточные параметры spread, он говорит собрать все агрументы, оперирует итерируемыми объектами
+// const min = Math.min(...array);
+// console.log(min);
