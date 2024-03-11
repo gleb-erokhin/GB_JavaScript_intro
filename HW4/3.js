@@ -28,6 +28,17 @@ array.forEach(element => {
 });
 console.log(`Array's element summ: ${result}`);
 
+// поиск 3 в массиве
+// создаем пустой результирующий массив
+const arrayForThree = [];
+
+for (let i = 0; i < array.length; i++) {
+    if (array[i] === 3) {
+        arrayForThree.push(i);
+    } 
+}
+console.log(`Индексы цифры 3 в массиве, если нет 3, то пустой массив: [${arrayForThree}]`);
+
 // вычисляем минимальный элемент
 let min = array[0];
 for (let i = 0; i < array.length; i++) {
