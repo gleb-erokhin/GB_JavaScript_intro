@@ -31,4 +31,15 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// const sortFilter = products.filter(function(item) {
+//   return item.photos
+//   }
+// );
+
+// console.log(sortFilter);
+
+products.sort(function(priceOne, priceTwo) {
+  return priceOne.price - priceTwo.price;
+})
+
+console.log(products);
