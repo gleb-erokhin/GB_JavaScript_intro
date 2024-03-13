@@ -31,15 +31,16 @@ const products = [
   },
 ];
 
-// const sortFilter = products.filter(function(item) {
-//   return item.photos
-//   }
-// );
+// выводим массив с ключами где есть фото
+const sortFilter = products.filter(function (item) {
+  return "photos" in item && item.photos.length > 0;
+});
 
-// console.log(sortFilter);
+console.log(sortFilter);
 
-products.sort(function(priceOne, priceTwo) {
+// выводим массив отсортированный по цене, с возрастанием цены.
+products.sort(function (priceOne, priceTwo) {
   return priceOne.price - priceTwo.price;
-})
+});
 
 console.log(products);
