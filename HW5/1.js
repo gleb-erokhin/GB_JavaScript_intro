@@ -15,4 +15,9 @@ const numbers = {
   key7: 7,
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// используем forIn пробегаемся по ключам и сверяем по условию
+for (const key in numbers) {
+  if (numbers[key] >= 3) {
+    console.log(numbers[key]);
+  }
+};
