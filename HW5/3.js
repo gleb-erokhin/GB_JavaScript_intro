@@ -23,4 +23,9 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// key означает индекс в массиве, через точку уже обращаемся к объекту, в данном случае к значению price
+for (const key in products) {
+  products[key].price = Math.round((products[key].price * 1.15) - products[key].price);
+}
+
+console.log(products);

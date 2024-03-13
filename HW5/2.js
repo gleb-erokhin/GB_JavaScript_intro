@@ -30,4 +30,17 @@ const post = {
   ],
 };
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+
+
+function show(obj) {
+
+
+  for (const key in post) {
+    if (typeof post[key] === 'number') {
+      console.log(post[key]);
+    } else {
+      console.log(show(post[key]));
+    }
+  }
+}
+
