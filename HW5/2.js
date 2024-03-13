@@ -31,16 +31,8 @@ const post = {
 };
 
 
-
-function show(obj) {
-
-
-  for (const key in post) {
-    if (typeof post[key] === 'number') {
-      console.log(post[key]);
-    } else {
-      console.log(show(post[key]));
-    }
-  }
-}
+console.log(`post.autor: ${post.author}`);
+console.log(`post.comments[0].rating.dislikes: ${post.comments[0].rating.dislikes}`);
+console.log(`post.comments[1].userid: ${post.comments[1].userId}`);
+console.log(`post.comments[1].text: ${post.comments[1].text}`);
 
