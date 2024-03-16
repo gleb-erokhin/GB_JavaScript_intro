@@ -31,4 +31,30 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// обращение к элементам массива по ключам, для понимания работы кода
+console.log(products[1].id);
+console.log(products[1].price);
+console.log(products[1].photos);
+
+// выводим массив с ключами где есть фото
+// const sortFilter = products.filter(function (item) {
+//   // Смотрим есть ли photos - как ключ ,если да то нужны те, у которых длина больше 0)
+//   return "photos" in item && item.photos.length > 0;
+// });
+
+// тоже самое с использованием стрелочной функции
+const sortFilter = products.filter((item) => {
+  // Смотрим есть ли photos - как ключ ,если да то нужны те, у которых длина больше 0)
+  return "photos" in item && item.photos.length > 0;
+});
+
+console.log('Filter')
+console.log(sortFilter);
+
+// выводим массив отсортированный по цене, с возрастанием цены.
+products.sort(function (priceOne, priceTwo) {
+  return priceOne.price - priceTwo.price;
+});
+
+console.log('sort')
+console.log(products);

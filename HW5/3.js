@@ -23,4 +23,16 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+// key означает индекс в массиве, через точку уже обращаемся к объекту, в данном случае к значению price
+// for (const key in products) {
+//   products[key].price = ((products[key].price / 100) * 85);
+// }
+
+// console.log(`выводим через for`, products);
+
+// через foreach
+products.forEach(element => {
+    element.price = ((element.price / 100) * 85);
+});
+
+console.log(`выводим через forEach`, products);
