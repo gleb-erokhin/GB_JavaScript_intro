@@ -20,4 +20,4 @@ for (const key in numbers) {
   if (numbers[key] >= 3) {
     console.log(numbers[key]);
   }
-};
+}

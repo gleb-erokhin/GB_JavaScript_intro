@@ -24,8 +24,15 @@ const products = [
 ];
 
 // key означает индекс в массиве, через точку уже обращаемся к объекту, в данном случае к значению price
-for (const key in products) {
-  products[key].price = Math.round((products[key].price * 1.15) - products[key].price);
-}
+// for (const key in products) {
+//   products[key].price = ((products[key].price / 100) * 85);
+// }
 
-console.log(products);
+// console.log(`выводим через for`, products);
+
+// через foreach
+products.forEach(element => {
+    element.price = ((element.price / 100) * 85);
+});
+
+console.log(`выводим через forEach`, products);
